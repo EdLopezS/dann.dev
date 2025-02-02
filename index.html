@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10c775d502.js" crossorigin="anonymous"></script>
+    <title>DannCory</title>
+</head> 
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="ubicaciones"><a href="#seccionDos">Sobre Mi</a></li>
+            <li class="ubicaciones"><a href="#seccionTres">Proyectos</a></li>
+            <li class="ubicaciones"><a href="#seccionCuatro">Contacto</a></li>
+            <!--<li class="item"><label id="switch"><input type="checkbox"><span class="slider round"></span></label></li>-->
+            <!--<li class="toggle"><a href="#"><i class="fa-solid fa-sliders"></i></a></li>-->
+        </ul>
+    </nav>
+    <section id="seccionUno" class="seccionPrincipal">
+        <div class="parteIzquierda">
+            <img alt="Imagen Personal" src="img/FotoPersonal.jpeg" class="tamañoFoto">
+            <div class="seccionBotones">
+                <a href="https://github.com/EdLopezS/EdLopezS" target="_blank">
+                    <button title="Ir a mi github" class="btnGithub"><i class="fa-brands fa-github"></i></button>
+                </a>
+                <button title="Descargar CV" class="btnCV" onclick="descargarCV()"><i class="fa-solid fa-file"></i></button>
+                <a href="#" target="_blank">
+                    <button title="Ir a mi linkedin" class="btnLinkedin"><i class="fa-brands fa-linkedin"></i></button>
+                </a>
+                
+            </div>
+            
+        </div>
+        <div class="parteDerecha">
+            <h1 class="miNombre">Edgar Daniel<br>López Servín</h1>
+            <h2 class="frase">Jugador en el mundo fantastico de la programación</h2>
+            <div>
+                <div class="skills-contenedor">
+                    <span class="skills"><i class="fa-brands fa-html5"></i></span>
+                    <span class="skills"><i class="fa-brands fa-css3-alt"></i></span>
+                    <span class="skills"><i class="fa-brands fa-js"></i></span>
+                    <span class="skills"><i class="fa-brands fa-python"></i></span>
+                    <span class="skills"><i class="fa-brands fa-git"></i></span>
+                    <span class="skills"><i class="fa-brands fa-github"></i></span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="seccionDos" class="seccionSobreMi">
+       <h2 class="tituloSobreMi">Sobre Mi</h2>
+       <div class="informacionSobreMi">
+            <p class="subtituloSobreMi"><b>Un aventurero Desarrollador Web 💻</b></p>
+            <p class="infoMe">¡Hola!😃 Soy un desarrollador full stack apasionado por el diseño, la lógica y la creatividad. 
+                Para mí, programar es como un videojuego: cada proyecto es una misión, cada error es un obstáculo a superar y cada solución es un logro desbloqueado. 
+                Me encanta crear experiencias digitales funcionales y atractivas, combinando código y diseño para resolver problemas de manera innovadora. 
+                Siempre estoy en busca de nuevos desafíos que me permitan crecer y mejorar mis habilidades.
+                Si estás buscando a alguien que transforme ideas en soluciones creativas y eficientes, ¡hablemos! 🚀</p>
+       </div>
+    </section>
+
+    <section id="seccionTres" class="seccionProyectos">
+        <h2 class="tituloProyectos">Mis Proyectos</h2>
+        <div class="collage">
+            <img src="img/300x300.png" alt="Proyecto 1" class="item item1">
+            <img src="img/300x300.png" alt="Proyecto 2" class="item item2">
+            <img src="img/300x300.png" alt="Proyecto 3" class="item item3">
+        </div>
+    </section>
+    
+
+    <section id="seccionCuatro" class="seccionFormulario">
+        <h2 class="tituloContacto">Contacto</h2>
+        <p class="subtituloContacto">Si te interesan mis habilidades, contactame, llamame o <br> mandame un mensaje por medio de Linkedin!</p>
+        <div class="informacionContacto">
+            <p class="info"><i class="fa-solid fa-phone"></i> +52 5653313824</p>
+            <p class="info"><i class="fa-solid fa-envelope"></i> edlopezservin@gmail.com</p>
+            <p class="info"><i class="fa-brands fa-linkedin"></i> Edgar Daniel López Servín</p>
+        </div>
+    </section>
+    
+
+
+
+<script src="funciones.js"></script>
+
+</body>
+</html>

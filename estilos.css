@@ -147,20 +147,23 @@ a:hover{
 
 /*Seccion Sobre Mi*/
 
-.seccionSobreMi{
+.seccionSobreMi {
     background-color: #333;
     padding: 20px;
     overflow: hidden;
+    width: 100%;
 }
+
 .informacionSobreMi {
     background-color: #229799;
     padding: 40px;
-    width: 80%;
+    width: 90%; /* Cambié el 80% por un porcentaje más flexible */
     max-width: 1000px;
     border-radius: 25px;
     margin: 0 auto;
     overflow: hidden;
 }
+
 
 
 .tituloSobreMi{
@@ -218,6 +221,17 @@ a:hover{
     color: white;
     overflow: hidden;
     font-family: 'Outfit', cursive;
+    width: 100%;
+}
+
+.informacionContacto {
+    background-color: #229799;
+    padding: 40px;
+    width: 90%; /* Ajusté para que sea más flexible */
+    max-width: 400px;
+    border-radius: 25px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .tituloFormulario {
@@ -231,16 +245,6 @@ a:hover{
     font-size: 20px;
 }
 
-.informacionContacto{
-    background-color: #229799;
-    padding: 40px;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 25px;
-    margin: 0 auto;
-    overflow: hidden;
-    font-size: 20px;
-}
 
 .info{
     padding: 15px;

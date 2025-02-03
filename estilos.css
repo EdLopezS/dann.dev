@@ -157,7 +157,7 @@ a:hover{
 .informacionSobreMi {
     background-color: #229799;
     padding: 40px;
-    width: 90%; /* Cambié el 80% por un porcentaje más flexible */
+    width: 90%;
     max-width: 1000px;
     border-radius: 25px;
     margin: 0 auto;
@@ -188,28 +188,116 @@ a:hover{
 }
 
 /*Seccion experiencia*/
+/* Contenedor de la sección de proyectos */
 .seccionProyectos {
     background-color: #333;
     padding: 40px;
     text-align: center;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.tituloProyectos{
+/* Título de la sección */
+.tituloProyectos {
     font-size: 28px;
-    padding: 10px;
-    padding-bottom: 20px;
-    font-family: 'Outfit', cursive;
     color: white;
+    margin-bottom: 20px;
+    font-family: 'Outfit', cursive;
 }
 
-.item{
+/* Contenedor de los proyectos */
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contenedor individual de cada proyecto */
+.proyecto {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Imagen del proyecto */
+.proyecto-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Contenido de texto y iconos (oculto por defecto) */
+.proyecto-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Iconos de los proyectos */
+.proyecto-iconos {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Efecto hover sobre la imagen */
+.proyecto:hover .proyecto-imagen {
+    opacity: 0.7; /* La imagen se vuelve más translúcida */
+}
+
+/* Mostrar el contenido cuando se hace hover */
+.proyecto:hover .proyecto-info {
+    opacity: 1; /* Se hace visible */
+}
+
+/* Efecto sobre los iconos al pasar el cursor */
+.proyecto-iconos i {
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.item:hover{
-    transform: scale(1.1);
+.proyecto-iconos i:hover {
+    color: #00ddaa; /* Cambio de color al pasar el cursor */
+}
+
+/* Efecto hover sobre el contenedor del proyecto */
+.proyecto:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el cursor */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 900px) {
+    .proyecto {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .proyecto {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /*Seccion contacto*/
@@ -227,7 +315,7 @@ a:hover{
 .informacionContacto {
     background-color: #229799;
     padding: 40px;
-    width: 90%; /* Ajusté para que sea más flexible */
+    width: 90%;
     max-width: 400px;
     border-radius: 25px;
     margin: 0 auto;
